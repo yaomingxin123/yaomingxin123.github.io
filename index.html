@@ -210,7 +210,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-30 17:20:27" itemprop="dateModified" datetime="2023-01-30T17:20:27+08:00">2023-01-30</time>
+      <time title="修改时间：2023-01-30 17:31:02" itemprop="dateModified" datetime="2023-01-30T17:31:02+08:00">2023-01-30</time>
     </span>
 
   
@@ -232,51 +232,14 @@
     <div class="post-body" itemprop="articleBody">
           <h3 id="动态加载包"><a href="#动态加载包" class="headerlink" title="动态加载包"></a>动态加载包</h3><p>字符串形式动态导入包<br><img src="/../images/LIBRARY/3.png" alt="3.png"></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">__import__(字符串)</span><br></pre></td></tr></table></figure>
-
-<h3 id="getattr获取对象中的属性"><a href="#getattr获取对象中的属性" class="headerlink" title="getattr获取对象中的属性"></a>getattr获取对象中的属性</h3><p>这个found可以是模块,如果在模块中找不到n会引发异常<br>getattr(x, ‘foobar’) 等同于 x.foobar.如果指定的属性不存在,且提供了 default 值,则返回它.否则触发AttributeError.</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">found = getattr(found, n) </span><br></pre></td></tr></table></figure>
-
-<h3 id="创建有序字典"><a href="#创建有序字典" class="headerlink" title="创建有序字典"></a>创建有序字典</h3><p>目前理解两个字典顺序不一致,&#x3D;&#x3D;则为false</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_itemClasses = collections.OrderedDict()</span><br></pre></td></tr></table></figure>
-<h3 id="监听关闭maya事件-已保存程序设置"><a href="#监听关闭maya事件-已保存程序设置" class="headerlink" title="监听关闭maya事件,已保存程序设置"></a>监听关闭maya事件,已保存程序设置</h3><p>先记录,用到在深入理解</p>
-<details>
-  <summary>点我展开看代码</summary>
-  <pre><code>
-_mayaCloseScriptJob = None
-def enableMayaClosedEvent():
-"""
-Create a Maya script job to trigger on the event "quitApplication".
-Enable the Maya closed event to save the library settings on close
-:rtype: None
-"""
-global _mayaCloseScriptJob
-if not _mayaCloseScriptJob:
-    event = ['quitApplication', mayaClosedEvent]
-    try:
-        _mayaCloseScriptJob = mutils.ScriptJob(event=event)
-        logger.debug("Maya close event enabled")
-    except NameError as error:
-        logging.exception(error)
-def disableMayaClosedEvent():
-"""Disable the maya closed event."""
-global _mayaCloseScriptJob
-if _mayaCloseScriptJob:
-    _mayaCloseScriptJob.kill()
-    _mayaCloseScriptJob = None
-    logger.debug("Maya close event disabled")
-def mayaClosedEvent():
-"""
-Create a Maya script job to trigger on the event "quitApplication".
-:rtype: None
-"""
-for libraryWindow in librarywindow.LibraryWindow.instances():
-    libraryWindow.saveSettings()
-  </code></pre>
-</details>
-
-
-
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/01/29/studio-library/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
