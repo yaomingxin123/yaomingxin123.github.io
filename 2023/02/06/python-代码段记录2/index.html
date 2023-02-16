@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Python 2.7中文处理python3有改变,只不过目前工作用到的是2.7 显示中文Python2.7默认使用的字符集是ASCII,只是让你的程序在运行的过程中显示中文. 1# -*- coding: UTF-8 -*- 设置系统默认字符编码123import sysreload(sys)sys.setdefaultencoding(&amp;#x27;utf-8&amp;#x27;)  编码和解码12345">
+    <meta name="description" content="Python 2.7中文处理python3有改变,只不过目前工作用到的是2.7 显示中文Python2.7默认使用的字符集是ASCII,只是让你的程序在运行的过程中显示中文. 1# -*- coding: UTF-8 -*- 过滤中文字符123regex &#x3D; re.compile(u&amp;#x27;[\u4e00-\u9fa5]+&amp;#x27;)if regex.search(i) is None:">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python-代码段记录2">
 <meta property="og:url" content="http://example.com/2023/02/06/python-%E4%BB%A3%E7%A0%81%E6%AE%B5%E8%AE%B0%E5%BD%952/index.html">
 <meta property="og:site_name" content="YMX Blog">
-<meta property="og:description" content="Python 2.7中文处理python3有改变,只不过目前工作用到的是2.7 显示中文Python2.7默认使用的字符集是ASCII,只是让你的程序在运行的过程中显示中文. 1# -*- coding: UTF-8 -*- 设置系统默认字符编码123import sysreload(sys)sys.setdefaultencoding(&amp;#x27;utf-8&amp;#x27;)  编码和解码12345">
+<meta property="og:description" content="Python 2.7中文处理python3有改变,只不过目前工作用到的是2.7 显示中文Python2.7默认使用的字符集是ASCII,只是让你的程序在运行的过程中显示中文. 1# -*- coding: UTF-8 -*- 过滤中文字符123regex &#x3D; re.compile(u&amp;#x27;[\u4e00-\u9fa5]+&amp;#x27;)if regex.search(i) is None:">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-06T07:24:15.000Z">
-<meta property="article:modified_time" content="2023-02-07T02:36:09.865Z">
+<meta property="article:modified_time" content="2023-02-15T02:42:30.887Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -137,7 +137,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python-2-7%E4%B8%AD%E6%96%87%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Python 2.7中文处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87"><span class="nav-number"></span> <span class="nav-text">显示中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E9%BB%98%E8%AE%A4%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81"><span class="nav-number"></span> <span class="nav-text">设置系统默认字符编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81"><span class="nav-number"></span> <span class="nav-text">编码和解码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E4%BC%BC-xe6-x8f%E2%80%A6%E8%BD%AC%E4%B8%AD%E6%96%87"><span class="nav-number"></span> <span class="nav-text">类似\xe6\x8f…转中文</span></a></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Python-2-7%E4%B8%AD%E6%96%87%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Python 2.7中文处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87"><span class="nav-number"></span> <span class="nav-text">显示中文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%87%E6%BB%A4%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6"><span class="nav-number"></span> <span class="nav-text">过滤中文字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E9%BB%98%E8%AE%A4%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81"><span class="nav-number"></span> <span class="nav-text">设置系统默认字符编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E5%92%8C%E8%A7%A3%E7%A0%81"><span class="nav-number"></span> <span class="nav-text">编码和解码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E4%BC%BC-xe6-x8f%E2%80%A6%E8%BD%AC%E4%B8%AD%E6%96%87"><span class="nav-number"></span> <span class="nav-text">类似\xe6\x8f…转中文</span></a></div>
         </div>
         <!--/noindex-->
 
@@ -150,7 +150,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -214,7 +214,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-02-07 10:36:09" itemprop="dateModified" datetime="2023-02-07T10:36:09+08:00">2023-02-07</time>
+      <time title="修改时间：2023-02-15 10:42:30" itemprop="dateModified" datetime="2023-02-15T10:42:30+08:00">2023-02-15</time>
     </span>
 
   
@@ -237,6 +237,8 @@
         <h4 id="Python-2-7中文处理"><a href="#Python-2-7中文处理" class="headerlink" title="Python 2.7中文处理"></a>Python 2.7中文处理</h4><p>python3有改变,只不过目前工作用到的是2.7</p>
 <h3 id="显示中文"><a href="#显示中文" class="headerlink" title="显示中文"></a>显示中文</h3><p>Python2.7默认使用的字符集是ASCII,只是让你的程序在运行的过程中显示中文.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: UTF-8 -*-</span><br></pre></td></tr></table></figure>
+<h3 id="过滤中文字符"><a href="#过滤中文字符" class="headerlink" title="过滤中文字符"></a>过滤中文字符</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">regex = re.compile(u&#x27;[\u4e00-\u9fa5]+&#x27;)</span><br><span class="line">if regex.search(i) is None:</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <h3 id="设置系统默认字符编码"><a href="#设置系统默认字符编码" class="headerlink" title="设置系统默认字符编码"></a>设置系统默认字符编码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys)</span><br><span class="line">sys.setdefaultencoding(&#x27;utf-8&#x27;)</span><br></pre></td></tr></table></figure>
 
 <h3 id="编码和解码"><a href="#编码和解码" class="headerlink" title="编码和解码"></a>编码和解码</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 编</span><br><span class="line">def encode_utf8(string):</span><br><span class="line">    return string.encode(&#x27;utf-8&#x27;)</span><br><span class="line"># 解</span><br><span class="line">def decode_utf8(string)</span><br><span class="line">    return unicode(string, encoding=&#x27;utf-8&#x27;)</span><br></pre></td></tr></table></figure>
@@ -259,6 +261,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2023/02/15/ue%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E5%89%8D%E7%BC%80/" rel="next" title="ue官方推荐前缀">
+                  ue官方推荐前缀 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
