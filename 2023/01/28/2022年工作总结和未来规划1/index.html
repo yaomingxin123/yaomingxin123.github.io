@@ -19,21 +19,16 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="主要整理下这一年所做的部分插件,因为有些功能做的很急…考虑的点不是很全面,所以今年(2023)要进行一些优化.">
+    <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2022年工作总结和未来规划(程序)">
 <meta property="og:url" content="http://example.com/2023/01/28/2022%E5%B9%B4%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93%E5%92%8C%E6%9C%AA%E6%9D%A5%E8%A7%84%E5%88%921/index.html">
 <meta property="og:site_name" content="YMX Blog">
-<meta property="og:description" content="主要整理下这一年所做的部分插件,因为有些功能做的很急…考虑的点不是很全面,所以今年(2023)要进行一些优化.">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/%E6%B8%B2%E6%9F%93%E5%B7%A5%E5%85%B7.png">
-<meta property="og:image" content="http://example.com/images/deadline%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7.png">
-<meta property="og:image" content="http://example.com/images/pipeline.png">
-<meta property="og:image" content="http://example.com/images/%E5%A4%A7%E7%BA%B2%E5%8F%B3%E9%94%AE.png">
 <meta property="article:published_time" content="2023-01-28T02:54:06.000Z">
-<meta property="article:modified_time" content="2023-01-29T03:38:15.418Z">
+<meta property="article:modified_time" content="2023-05-31T10:52:07.646Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/%E6%B8%B2%E6%9F%93%E5%B7%A5%E5%85%B7.png">
 
 
 <link rel="canonical" href="http://example.com/2023/01/28/2022%E5%B9%B4%E5%B7%A5%E4%BD%9C%E6%80%BB%E7%BB%93%E5%92%8C%E6%9C%AA%E6%9D%A5%E8%A7%84%E5%88%921/">
@@ -129,7 +124,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -142,7 +137,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%B2%E6%9F%93%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">渲染工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#deadline-%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">deadline 提交插件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6-%E4%B8%BB%E5%8A%A8"><span class="nav-number">2.1.</span> <span class="nav-text">提交插件 主动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E6%8F%92%E4%BB%B6-%E8%A2%AB%E5%8A%A8"><span class="nav-number">2.2.</span> <span class="nav-text">提交插件 被动</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pipeline-%E5%B7%A5%E5%85%B7"><span class="nav-number">3.</span> <span class="nav-text">pipeline 工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%B7%BB%E5%8A%A0%E8%87%B3%E6%B8%B2%E6%9F%93%E5%B1%82"><span class="nav-number">4.</span> <span class="nav-text">快速添加至渲染层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AA%E6%9D%A5%E8%A7%84%E5%88%92"><span class="nav-number">5.</span> <span class="nav-text">未来规划</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -219,7 +213,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-01-29 11:38:15" itemprop="dateModified" datetime="2023-01-29T11:38:15+08:00">2023-01-29</time>
+      <time title="修改时间：2023-05-31 18:52:07" itemprop="dateModified" datetime="2023-05-31T18:52:07+08:00">2023-05-31</time>
     </span>
 
   
@@ -239,36 +233,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>主要整理下这一年所做的部分插件,因为有些功能做的很急…考虑的点不是很全面,所以今年(2023)要进行一些优化.</p>
-<span id="more"></span>
-<h3 id="渲染工具"><a href="#渲染工具" class="headerlink" title="渲染工具"></a>渲染工具</h3><p><img src="/images/%E6%B8%B2%E6%9F%93%E5%B7%A5%E5%85%B7.png"></p>
-<p>使用最频繁之一的插件了,创建aov那里的代码逻辑需要改进,而且要添加自定义config.</p>
-<h3 id="deadline-提交插件"><a href="#deadline-提交插件" class="headerlink" title="deadline 提交插件"></a>deadline 提交插件</h3><h4 id="提交插件-主动"><a href="#提交插件-主动" class="headerlink" title="提交插件 主动"></a>提交插件 主动</h4><p><img src="/images/deadline%E6%8F%90%E4%BA%A4%E5%B7%A5%E5%85%B7.png"></p>
-<p>优势和解决的痛点<br>1.优先帧测试功能,可自动提交自定义测试帧,不必手动设置</p>
-<p>2.提交速度,相比官方插件优化了一些不必要的参数,提交速度提升约70%</p>
-<p>3.黑白名单功能(后续可能会移除此功能),最开始的设计这个功能的初衷是有些机子渲染会失败,提交时把已知报错的机子添加黑名单即可解决.后面写了个事件插件,因此觉得此功能可以废除</p>
-<p>4.自动指认cgteam上渲染输出路径,可规范化路径,一键式提交</p>
-<p><em>计划上线的功能</em></p>
-<p>后续会增加自动计算首尾帧,和首中尾帧功能</p>
-<h4 id="提交插件-被动"><a href="#提交插件-被动" class="headerlink" title="提交插件 被动"></a>提交插件 被动</h4><p>解决的痛点<br>1.一台机子渲染任务时如果报错,也会一直渲染直到整个任务失败,导致要不断人工检查是否报错.包括周六周日.<br>现在设定每个任务如果渲染失败超过3次会自动加入黑名单,基本解决以上问题</p>
-<p>2.每个优先级为100的任务,渲染完成后会自动调整为0<br>方便制作人员查看,渲染的优先级</p>
-<p><em>计划上线的功能</em></p>
-<p>目前会出现一台机子几秒渲染一帧的失败情况,后续也会考虑添加最低渲染时间,如果低于这个时间会自动加入黑名单,这个在安排中</p>
-<h3 id="pipeline-工具"><a href="#pipeline-工具" class="headerlink" title="pipeline 工具"></a>pipeline 工具</h3><p><img src="/images/pipeline.png"></p>
-<p>解决的痛点</p>
-<p>1.规范文件,快速定位打开maya档案</p>
-<p>2.提升打开文件速度,自动关闭显示贴图等</p>
-<p>3.快速导入结算文件</p>
-<p>4.可直接双击查看动画和结算拍屏</p>
-<p><em>计划上线的功能</em></p>
-<p>1.添加自定义文件路径,创建属于自己的一个maya库,快速导入</p>
-<p>2.Ui现在的设计不是很合理,并且有些丑…</p>
-<h3 id="快速添加至渲染层"><a href="#快速添加至渲染层" class="headerlink" title="快速添加至渲染层"></a>快速添加至渲染层</h3><p><img src="/images/%E5%A4%A7%E7%BA%B2%E5%8F%B3%E9%94%AE.png"></p>
-<p>解决的痛点</p>
-<p>1.Maya自带的添加渲染层很卡,不方便</p>
-<p>2.修改原生ui,可直接outline右键添加物体到渲染层,使用更平滑</p>
-<h3 id="未来规划"><a href="#未来规划" class="headerlink" title="未来规划"></a>未来规划</h3><p>ue python 蓝图 </p>
-
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="0bc53332223fb0973872809c9707ed98d838c898fd734466beea37b47e1679a2">a40cd492b7d0c6b02163d86011ff5a93c430a1e3082ed69f813a7a4dd4e7982e74543ed916f4637c70f0fa5b5c93f50abbcbd6b1bddb8b66dbfa290023dca8e8e730d59fac525fdfdcc4a3a662c6c77b356b9bd6499c2a4415de2f57c50ada06ad433d3552a12b3c5a9ada81abe9c556ce342b7c97793dafc3e99e91ffdacdd728881b391e0bf58eae3b84e3f36ceeed7c2b1f15e4d5608e79896b415d2369b30f33f3019afcb17bb70224630a6a40d4b0d3c3b91f28a6b2185c4f3c23f17fa14e8e51b2fe43c1caa2717f8595e99e90fd620409bd3cc00da82b752b920c8fd90b7e9637f08ceb3feb1ea8ee59182dcdf1bdc2619ddbd7f3685446b852671d82833f24e5b93d67055582b4060bd6a0c06d8460d886bf04276c389b90c6e5d531327118e26a1dcddac338cc9a3c276cdd912613fbcb9e405a2be56470c6d412badca908e84c49fec048284299fa974abe164156b44088046ac5201dd85b340103de70b7da17145e33ee6c0947fd4d87f936e9da3069af13fd59607e681b4284c3715bcf5229933ad5172d72bc39637aadd14009b7a5200620845bb1954d5448e346798a40f8865e82b75a6d79a0049e061064bf48691ea54a424b2dada9d7a33240dad702194ad35d4dbd3a3746dda2796d2fc60a73c27f4f0f92ce112b452e00653a336881eb2cc3ef317930a76b6f9bc95fe64632cc9fcd4d65bf2f673714cb6645cf089b31e91524bfe8b67622b9eb49f6d22cbe8e8946e18822be528046283ef4aa2506e8715797ce11e2849503697d63161c77e280bfcc08c30bb21c6896932e375086b556c733190122775b5d77a0d0ba6dc310f995d775008b76c51ce4d9435e9621c734804860984f3d713e37b25823a659cffc3c924a291bd67a10f9d77b8b0b3390f893f673ed62b4ebdd21be50e3338694500d3491dc784c677f7c1d4120f3eb50f47573047ab93ee2a39384a9648a4695d623c334e6693ace738be4c6244decf599febed70073eb2a0c14ac2e1c33ff6b3f03a678c796c8d6ea0c95bb2383e7d7c48124c1e96955a8ec5677d17e01ca79ebc92356a6f574cf4ea322677b41b9ff8a5ac8846cd7de4aea4718d67754d0bd3ce2c33ef89e15f719ff1b0278bdedfde9e6ab17b1966b46ec190204ff570005faf23b96cc7a1d504a4ee1f2fdb04b13d03e04b3cb8e811e8d35d83d796379f892169b4978ce4892721b42529da11af848332027f41304ed69764d54f58b4fdd3db23199c567d53bc950fd5b1ae58edf40070722a702888b47616448071095e97a01c8b872906a4bbb892b8bad36519787e9eb06b96e348b4cd330e2d2476e1055b3bf43805da7216c27f05623f15e495b95facf30fa7616edc41634b2f662855aaf42d500a97025aea1fa4b12ccdb26dc5b29892c98c479e6da3c0a1a72ec4ff8cf3242cad667965bea792d4777f7e31313d57f989d4a4c5948aa591772f32f61ea1584a8f56494c00a9104ec46f854ad9895794ec5e36232e5842a94afd4add3c283f5c02686531584a86cf725870a2930359dcf0c57e34e56cce5305f1770e922ee81b02b0138356aed7d4324c63295d5a0790a5a6cde2a5220ebb6a1e2e60864ddf3d0a3bdef3fe9a081ecfe3436097a31b5a022f261c70f10d0d25c85ca4dc55a1704abc93ea535d9d84d78928483f2322c6d395c9df4035caa88dae3318eb04ad0948aa8782f5a634d66df04205a15401cfaf4677ea8f2f63abb0bcda5267638338d70ec7d58bf9339d7c62d53ab9239f599cbb04d9257394d8324a68ace7fc99ac7956651987bbfdd707683aee6ddf8edd3c5fbd2db18851be85170dbd933d6a71b26ca41b90d2d5b1cc5b4b8925491a39da6940694a464e54af872eb3061959a757eaa09059ac25942df5fff0f32dacbacb19bbb8cb674daa4d0f61cf92ab6c5e8018ea864a18fe8ceb52428e211f2dc6e9bf30d9578a984461a36b61431e5d764400a76e918ddfd613c603e3e8dc138a43fa55a6afc3ad228e820cc8f1d7c1d822bcfd1d77a4866bce8d22494d55a015e5424b94d34b2d76853040363c22b87fd1e0f25de06e90c3d72970893968d9b58ab8b68b9e09130728313c3b90a8fd4d5fd1b37addd7b26c75b49a380addd09b4749284652671ab6ec719c8c92a1386620c918f7a3dac13b86990d455b439b2e72c342166f6ba57de050fa410092ea08ac51a89d423933602ac2a5d74029d32ee69bef0152ccdf8ed7d13d5fbd3c11f98f76f61659cece0a7a60c88e8ef037ce17e82616d5129514eec55fa28c923c6cbde9b6e2a92566eb8f532fb8d0db54d6001b1817662ecc78b6b923e023e391168d309195601c3a8693f9d24bd02d52f31932e9423a6f7ff25bee60cdc1ee4c1583231eb304d6f239bc6de892fef7b225396dfbc6e6b659cd53bf698833bf35e20fb4ebfab5dc86bf98019041fd568a272971ecbd8655cbadc34467f805fd13be354ce5e0325aea4bdc49719989be4518585e519730be8098ee0280a829e613a82fe664ee725b0890058487c3f79d42dd6ef78bf93e1646fc3430a2eea64c37bf4ed3334e8347d45c8fc7007cd391d36b24ee30e732dc1e9ff02bffa2c8d6f74b3edd95ad1db223bdc67ac0501048ceac44376140bf480a98956937abb3ac6fea0ffd06f726bad8ec5d689d689e2d72ffb16cc07170bc7f5732d363a47d494c8b0ac46cd4eb30bbfd2a54dc01a93b4367245787d4e2275136dbcb833d78d808812964fbc856b3eb35018323d8333a81fb678c99f8b9e7362113b76f43d1cb7e47af31aeee2632c68718077f2d606aebfd1fb4344a5799d8f0c828a07b854f86b84d853d6b0235fd2a45441fdd15d2d7f7d68a21a11647b97803378e1e7fdebce22fde3633f3fe384a6994e94d6a1fb30ba6358ec545bbe56ebf6830b08544bf9f52e0f9edf12911c8735b25eb0801814b121919b8bb1ad46fc201f85c0426fb5d7d6e72d99949be6d84534ec601f154d4a0b751e82cf318d50f35491bb154351f91253e0ade7502541890c90782684206685ab33a469a0b485968970b2260b58b68ac791e74029ce3ffca6d661b5a8766917d7d6c4c2f0d21a9de734235f41242cfd865c32fb6611c16b8761c098b1c24fbc39e66e3ed788f85bc242e86185326ddea0f7b78cfe8687597b8edbd9acee5f3dbd46260ab6237d3ab3619d106d048bf2d951e4b8dc8830f9145e06231859a35827a82cc9997053eb91795756e20ab8a3ec35feb7055e9f2b3809131a9d04efd4646df0e2b3fd849798f7cd56c78ab7b7423754ec021b940a3101a4c3676c62777a715a6e932c1882455e93fb3adfd2baa2c75eae9449c9ac3b5398aec86139d73e8a5fd082c111dd40a28fc4506dd5be4a4f0bca03e79f3ae579fc91c9282f5641f66f7501db71e821bf9e61e20e1282860662ff054c8380860d8c10c1c9c7a1e027b04d4a6225c0de296e261847816636daef7be05d4587bee25d8b3ec9546efbf13e51d67fbed9167e218879c6acb97c96205ec2ae3631748dbc0ebcf1a9d7564e7dc0a7eb053857594f29b652a9d6c6b83537b3c0c78b95d1edfde9854e63190dbeebd1b459b990550ffc4f3f9fce1712ed6ccc85f2f94668da18fe27e768d6a7c8bac4904d1f3689bda757c0d963d4ade2b4c0fb27347d75186d740c87e0a937c7a638eca438b5ce18c15a4d2265e21a12a08c3fa0649a872cc3712d511cf1dd9249ced12d9379d000852ea81e7b9c928358d1d4b13ea3c75978c2e93d194cc68604927f52c24ab1c4c43e78bf4e2a4bea0e7cee2f95ed9cb708a5586d3b8c3e18a6aee03c1ccae98cfdf45592954a0bb9c421e9e71934c083765afa696c7a41ff61fb1465af801f46a0fb1292badc8d0aae53fc2b8c49032e1a957baffa67cbbc8e7db104fd9a6b0f1d2030c29eaab3fd20d1bf518220a2d77cbdd68eff760b2322ac99e4a499b58f7b75af997df42dd94fc34fce66fad2ca05a90edada0924fc389e4a86a0ffe8bc9782dde338449f98220e43942c2a4134b684032ee5f13283738f6873ad35ac0fa9355d443a6404712ae46ec17bccb5e83488f0d0289561272dc7735f1f2045eee86383b395e00d630355f50bdd84579bb5944990903c4e3d0920af12eed4c3c26e567fd7ce17f2804a5c102d8c549d2fa9ed6c588239bfb8e0f1b4fffa93ba003eba7df9a1a77c1b7723c3aa43e9b6b8585986c085d171ea55ce637e97a5f517975a443d78fd4f1cbad95c83497193ae12daf10a7f4d204e505e834d4bb847d6381359ab14ae03f7def37b0a0bac8c91eaec6a241b997fc77b997f52adde8000f429f842d6d59b176fb002190a872e60212428f43663a8f2ad9234d8c02c66b07682b5b07077a75021c64238e28039ef5d4e90ac5c9b56c0ea1a0485eaa311d36ca766e656a480967072f266b809c068d65acf1bba0e382a1cb793a71243d4d839a42b7fa0695150783487ef3f966f8a6e575788413195f346b787d8203b265e244a211aec44caec7065127b9e55324428fa5361a0b357d4f74bc211ef572022f2508f54b96cc8de7c94e27727826b86deb2ff2a10f1e7cc1516496c2fbdb9d8bd520c4a651d585acb00502684d16887f9fcd1d0fbe92843d12fe8fe5f63f59388475cb8f3e0a290523c7aa7a0e5f8b429b8a608b4b432b0f65cff27d04d9663d57b6a060c716901e6dc2c4f34fe9a59da9149d88abc5c81de</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
     </div>
 
     
