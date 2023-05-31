@@ -285,7 +285,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-05-19 16:11:24" itemprop="dateModified" datetime="2023-05-19T16:11:24+08:00">2023-05-19</time>
+      <time title="修改时间：2023-05-31 16:29:30" itemprop="dateModified" datetime="2023-05-31T16:29:30+08:00">2023-05-31</time>
     </span>
 
   
@@ -305,13 +305,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h4 id="地编"><a href="#地编" class="headerlink" title="地编"></a>地编</h4><h3 id="距离很远时雾气会消失"><a href="#距离很远时雾气会消失" class="headerlink" title="距离很远时雾气会消失"></a>距离很远时雾气会消失</h3><p>解决办法：ExponentialHeightFog 下视图距离Volumetric Fog Distance调整</p>
+          <h4 id="地编"><a href="#地编" class="headerlink" title="地编"></a>地编</h4><h3 id="流送池超出"><a href="#流送池超出" class="headerlink" title="流送池超出"></a>流送池超出</h3><p>简单理解内存溢出，扩大内存设置是其中一个办法<br>4.24默认3000</p>
+<p>cmd r.Streaming.PoolSize &#x3D; 4096</p>
+<h3 id="距离很远时雾气会消失"><a href="#距离很远时雾气会消失" class="headerlink" title="距离很远时雾气会消失"></a>距离很远时雾气会消失</h3><p>解决办法：ExponentialHeightFog 下视图距离Volumetric Fog Distance调整</p>
 <h3 id="距离很远时阴影会消失"><a href="#距离很远时阴影会消失" class="headerlink" title="距离很远时阴影会消失"></a>距离很远时阴影会消失</h3><p>解决办法：动态阴影距离Dynamic Shadow Distance Movable Light可移动光照调整</p>
 <h3 id="距离很远时灯光会消失"><a href="#距离很远时灯光会消失" class="headerlink" title="距离很远时灯光会消失"></a>距离很远时灯光会消失</h3><p>解决办法：<br>1.项目设置中，光源的最小屏幕半径Min Screen Radius for Lights 设置为0<br>2.后期盒子里 有空测试</p>
 <h3 id="太阳雾气很大"><a href="#太阳雾气很大" class="headerlink" title="太阳雾气很大"></a>太阳雾气很大</h3><p>定向内散射指数Directional inscattering Exponent 调整</p>
 <h4 id="蓝图"><a href="#蓝图" class="headerlink" title="蓝图"></a>蓝图</h4><h3 id="cast-to-失败"><a href="#cast-to-失败" class="headerlink" title="cast to 失败"></a>cast to 失败</h3><p>1.检查物体的碰撞模式（动态场景，静态场景）<br>2.检查物体是否有碰撞</p>
 <h3 id="向量的运算"><a href="#向量的运算" class="headerlink" title="向量的运算"></a>向量的运算</h3><p>位置减法:a-b&#x3D; b指向a的向量<br>向量加法:a+b&#x3D; 平行四边形<br>向量乘法:a*b &#x3D; 沿着向量方向位移</p>
 <p>向量点乘 获取的是两个向量的夹角,大于180为-1,否则为1,使用acos可以转换为角度<br>向量差乘 获取垂直于两个向量平面的值<br>ps:使用distance函数获得两个点之间的位置</p>
+<h4 id="渲染"><a href="#渲染" class="headerlink" title="渲染"></a>渲染</h4><h3 id="输出mov"><a href="#输出mov" class="headerlink" title="输出mov"></a>输出mov</h3><p>开启 Apple ProRes插件</p>
+<p>编解码器<br>Apple ProRes 422 Proxy 画质为最低,压缩最高(一般用这个预览)<br>Apple ProRes 4444 XQ 相反,文件大小很大</p>
 
       
     </div>
